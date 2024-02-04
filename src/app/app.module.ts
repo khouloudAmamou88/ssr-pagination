@@ -12,11 +12,13 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxPaginationModule,
+    HttpClientModule
   ],
   providers: [
     provideClientHydration()
   ],
-  bootstrap: [AppComponent, NgxPaginationModule, HttpClientModule]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
